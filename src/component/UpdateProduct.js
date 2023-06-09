@@ -27,24 +27,46 @@ const UpdateProduct = () => {
         console.log(name,price,category,company)
     }
 
-  return (
-    <div className='product'>
-        <h1>Update Product</h1>
-        <input type='text' placeholder='Enter Product Name' value={name} className='input-box' onChange={(e)=>{setName(e.target.value)}} />
+//   return (
+//     <div className='product'>
+//         <h1>Update Product</h1>
+//         <input type='text' placeholder='Enter Product Name' value={name} className='input-box' onChange={(e)=>{setName(e.target.value)}} />
 
 
-        <input type='text' placeholder='Enter Product Price' value={price} className='input-box' onChange={(e)=>{setPrice(e.target.value)}} />
+//         <input type='text' placeholder='Enter Product Price' value={price} className='input-box' onChange={(e)=>{setPrice(e.target.value)}} />
 
 
-      <input type='text' placeholder='Enter Product Category' value={category} className='input-box' onChange={(e)=>{setCategory(e.target.value)}}/>
+//       <input type='text' placeholder='Enter Product Category' value={category} className='input-box' onChange={(e)=>{setCategory(e.target.value)}}/>
 
 
-      <input type='text' placeholder='Enter Product Company' value={company} className='input-box' onChange={(e)=>setCompany(e.target.value)}/>
+//       <input type='text' placeholder='Enter Product Company' value={company} className='input-box' onChange={(e)=>setCompany(e.target.value)}/>
 
 
-        <button onClick={()=>updateProduct()} className='appButton'>Update product</button>
-    </div>
-  )
+//         <button onClick={()=>updateProduct()} className='appButton'>Update product</button>
+//     </div>
+//   )
+// }
+
+return (
+  <div className='product'>
+      <h1>Update Product</h1>
+      <input type='text' placeholder='Enter Product Name' value={name} className='input-box' onChange={(e)=>{setName(e.target.value)}} />
+
+
+      <input type='text' placeholder='Enter Product Price' value={price} className='input-box' onChange={(e)=>{setPrice(e.target.value)}} />
+
+
+    <input type='text' placeholder='Enter Product Category' value={category} className='input-box' onChange={(e)=>{setCategory(e.target.value)}}/>
+
+
+    <input type='text' placeholder='Enter Product Company' value={company} className='input-box' onChange={(e)=>setCompany(e.target.value)}/>
+
+
+      <button onClick={()=>updateProduct()} className='appButton'>Update product</button>
+  </div>
+)
 }
+
+
 
 export default UpdateProduct;
